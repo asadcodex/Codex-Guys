@@ -15,7 +15,7 @@ export function Character({
   ...props
 }) {
   const group = useRef();
-  const { scene, animations } = useGLTF("/.proxy/models/character.glb", "draco/gltf/");
+  const { scene, animations } = useGLTF("/.proxy/models/character.glb", "/.proxy/draco/gltf/");
   // Skinned meshes cannot be re-used in threejs without cloning them
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
@@ -41,7 +41,7 @@ export function Character({
           fontSize={0.5}
           anchorX="center"
           anchorY="middle"
-          font="fonts/PaytoneOne-Regular.ttf"
+          font="/.proxy/fonts/PaytoneOne-Regular.ttf"
         >
           {name}
           <meshBasicMaterial color="white" />
@@ -53,7 +53,7 @@ export function Character({
           fontSize={0.5}
           anchorX="center"
           anchorY="middle"
-          font="fonts/PaytoneOne-Regular.ttf"
+          font="/.proxy/fonts/PaytoneOne-Regular.ttf"
         >
           {name}
           <meshBasicMaterial color="black" />
@@ -97,4 +97,4 @@ export function Character({
   );
 }
 
-useGLTF.preload("/.proxy/models/character.glb", "draco/gltf/");
+useGLTF.preload("/.proxy/models/character.glb", "/.proxy/draco/gltf/");
