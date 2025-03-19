@@ -15,7 +15,7 @@ const TIME_AFTER_HIT = 600;
 
 export function Hexagon({ color, onHit, hit, ...props }) {
   const { playAudio } = useAudioManager();
-  const { nodes, materials } = useGLTF("/.proxy/models/hexagon.glb", "/.proxy/draco/gltf/");
+  const { nodes, materials } = useGLTF("/models/hexagon.glb", "draco/gltf/");
   const hexagonMaterial = useRef();
 
   const [disabled, setDisabled] = useState(false);
@@ -72,4 +72,4 @@ export function Hexagon({ color, onHit, hit, ...props }) {
   );
 }
 
-useGLTF.preload("/.proxy/models/hexagon.glb", "/.proxy/draco/gltf/");
+useGLTF.preload("/models/hexagon.glb", "draco/gltf/");
