@@ -6,7 +6,7 @@ A challenging obstacle course game built with React Three Fiber and Three.js.
 
 ## 🎮 About
 
-Codex Guys is a fun obstacle course game where players navigate through challenging levels, avoid obstacles, and race against the clock to reach the finish line. Built with React Three Fiber and Three.js, this game provides an engaging 3D experience with physics-based gameplay and charming character animations.
+Codex Guys is a fun obstacle course game where players navigate through challenging levels, avoid obstacles, and race against the clock to reach the finish line. Built with RTF and Three.js, this game provides an engaging 3D experience with physics-based gameplay and charming character animations.
 
 ## ✨ Features
 
